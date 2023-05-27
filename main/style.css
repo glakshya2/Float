@@ -72,10 +72,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
     height:5vh;
 }
 
+.type {
+    gap:2vw;
+}
+
+.details {
+    gap: 17vw;
+}
 .type p {
     background-color: #D3D3D3;
     color:#5A5A5A ;
