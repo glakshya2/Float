@@ -1,0 +1,82 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #D3D3D3;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+hr {
+    width: 0;
+    height: 96vh;
+    margin-left: 5px;
+}
+
+.right {
+    height: 90vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    text-align: center;
+    border: 2px solid #D3D3D3;
+    width: 10vw;
+    height: 4vh;
+}
+
+input::placeholder {
+    text-align: center;
+    color: #D3D3D3;
+}
+
+label {
+    margin-top: 2vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Photo {
+    border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#submit:hover,
+#submit:focus {
+    width: 12vw !important;
+    height: 5vh !important;
+    background-color: #D3D3D3;
+    color: #5A5A5A;
+    border-color: #5A5A5A;
+}
+
+input:not(#Photo):hover,
+input:not(#Photo):focus {
+    width: 20vw;
+    height: 5vh;
+    box-shadow: gray 5px 5px;
+    transition: 0.5s;
+}

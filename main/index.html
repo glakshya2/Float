@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="top">
+      <div class="photo">
+        <img />
+      </div>
+      <div class="info">
+        <div id="name">Username</div>
+        <div id="balance">Balance: <span>₹1234</span></div>
+      </div>
+      <div class="logo">
+        <img src="../logo/svg/logo-white.svg" />
+      </div>
+    </div>
+
+    <h1>Add Transaction</h1>
+    <div class="transaction">
+        <form>
+            <div class="type">
+                <p>Type:</p>
+                <input type="radio" id="debit" name="type" value="debit" checked>
+                <label for="debit">Debit</label>
+                <input type="radio" id="credit" name="type" value="credit">
+                <label for="credit">credit</label>
+            </div>
+            <div class="details">
+                <input type="text" placeholder="Name" required>
+                <input type="number" placeholder="Amount" min="1" required>
+                <input id="submit" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <h1>History</h1>
+    <div class="history">
+        <table>
+            <thead>
+                <tr id="header">
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Example</td>
+                    <td>1/1/1/</td>
+                    <td>-1000</td>
+                    <td>1234</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>
+</html>
