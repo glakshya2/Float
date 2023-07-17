@@ -18,13 +18,13 @@ img {
 
 hr {
     width: 0;
-    height: 96vh;
+    height: 96%;
     margin-left: 5px;
 }
 
 .right {
-    height: 90vh;
-    width: 70vw;
+    height: 90%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -32,8 +32,8 @@ hr {
 input {
     text-align: center;
     border: 2px solid #D3D3D3;
-    width: 10vw;
-    height: 4vh;
+    width: 10%;
+    height: 4%;
 }
 
 input::placeholder {
@@ -42,7 +42,7 @@ input::placeholder {
 }
 
 label {
-    margin-top: 2vh;
+    margin-top: 2%;
 }
 
 form {
@@ -66,8 +66,8 @@ input[type="number"] {
 
 #submit:hover,
 #submit:focus {
-    width: 12vw !important;
-    height: 5vh !important;
+    width: 12% !important;
+    height: 5% !important;
     background-color: #D3D3D3;
     color: #5A5A5A;
     border-color: #5A5A5A;
@@ -75,8 +75,8 @@ input[type="number"] {
 
 input:not(#Photo):hover,
 input:not(#Photo):focus {
-    width: 20vw;
-    height: 5vh;
+    width: 20%;
+    height: 5%;
     box-shadow: gray 5px 5px;
     transition: 0.5s;
 }

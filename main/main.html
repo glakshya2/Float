@@ -11,11 +11,11 @@
     
     <div class="top">
       <div class="photo">
-        <img src="./profile.svg"/>
+        <img id="profile_photo" src="./profile.svg"/>
       </div>
       <div class="info">
         <div id="name">Username</div>
-        <div id="balance">Balance: <span>₹1234</span></div>
+        <div id="balance">Balance: <span id="balanceAmount">₹1234</span></div>
       </div>
       <div class="logo">
         <img src="../logo/svg/logo-white.svg" />
@@ -24,7 +24,7 @@
 
     <h1>Add Transaction</h1>
     <div class="transaction">
-        <form>
+        <form onsubmit="addTransaction()">
             <div class="type">
                 <p>Type:</p>
                 <input type="radio" id="debit" name="type" value="debit" checked>
@@ -33,8 +33,8 @@
                 <label for="credit">credit</label>
             </div>
             <div class="details">
-                <input type="text" placeholder="Name" required>
-                <input type="number" placeholder="Amount" min="1" required>
+                <input type="text" placeholder="Name" required id="tname">
+                <input type="number" placeholder="Amount" min="1" required id="amount">
                 <input id="submit" type="submit">
             </div>
         </form>
@@ -48,18 +48,17 @@
                     <th>Name</th>
                     <th>Date</th>
                     <th>Amount</th>
-                    <th>balance</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="transactionHistory">
                 <tr>
                     <td>Example</td>
                     <td>1/1/1/</td>
                     <td>-1000</td>
-                    <td>1234</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

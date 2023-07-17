@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="left">
-        <img src="../logo/svg/logo-white.svg">
-    </div>
-    <hr>
-    <div class="right">
-      <h1>Signup</h1>
-      <form action="../main/main.html">
-        <label for="Name">Name:<br><br></label>
-        <input id="Name" type="text" placeholder="Name" required>
-        <label for="Email">Email Address:<br><br></label>
-        <input id="Email" type="text" placeholder="Email Address" required>
-        <label for="Pass">Password:<br><br></label>
-        <input id="Pass" type="password" placeholder="Password" required>
-        <label for="Confirm">Confirm Password:  <br><br></label>
-        <input id="Confirm" type="password" placeholder="Confirm Password" required>
-        <label for="Balance">Balance:<br><br></label>
-        <input id="Balance" type="number" placeholder="Balance" required>
-        <label for="Photo">Profile Photo</label>
-        <input id="Photo" type="file">
-        <input id="submit" type="submit">
-      </form>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="left">
+    <img src="../logo/svg/logo-white.svg">
+  </div>
+  <hr>
+  <div class="right">
+    <h1>Signup</h1>
+    <form id="signupForm" action="../main/main.html">
+      <label for="Name">Name:<br><br></label>
+      <input id="Name" type="text" placeholder="Name" required id="nameInput">
+      <label for="Email">Email Address:<br><br></label>
+      <input id="Email" type="email" placeholder="Email Address" required id="emailInput">
+      <label for="Pass">Password:<br><br></label>
+      <input id="Pass" type="password" placeholder="Password" required id="passwordInput">
+      <label for="Confirm">Confirm Password:  <br><br></label>
+      <input id="Confirm" type="password" placeholder="Confirm Password" required id="confirmInput">
+      <label for="Balance">Balance:<br><br></label>
+      <input id="Balance" type="number" placeholder="Balance" required id="balanceInput">
+      <label for="Photo">Profile Photo</label>
+      <input id="Photo" type="file" id="photoInput">
+      <input id="submit" type="submit" value="Sign Up">
+    </form>
+  </div>
+  <script src="signup.js"></script>
+</body>
 </html>
